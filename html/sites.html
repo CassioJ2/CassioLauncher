@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecione um site</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Selecione um site</h1>
+  </header>
+
+  <main>
+    <ul class="produtos">
+      <li>
+        <h2>CPA</h2>
+        <a href="https://play.cpavalanche.net" class="site-item" aria-label="Acesse o Club Penguin Avalanche!">
+          <img src="../imgs/cpa.jpg" alt="Logotipo do Club Penguin Avalanche!" class="site-imagem">
+        </a>
+        <p class="produto-descricao">Club Penguin Avalanche!</p>
+      </li>
+      <li>
+        <h2>CPD</h2>
+        <a href="https://play.conexaopinguim.pw/pt/" class="site-item" aria-label="Acesse o Club Penguin Dimension">
+          <img src="../imgs/cpd.jpg" alt="Logotipo do Club Penguin Dimension" class="site-imagem">
+        </a>
+        <p class="produto-descricao">Club Penguin Dimension</p>
+      </li>
+      <li>
+        <h2>Meu amor!</h2>
+        <a href="https://www.instagram.com/isabela.minucci/" class="site-item" aria-label="Instagram do meu amor!">
+          <img src="../imgs/nos.jpg" alt="Nos!" class="site-imagem">
+        </a>
+        <p class="produto-descricao">Eu te amo Isabela Minucci de Almeida! 🥰</p>
+      </li>
+    </ul>
+  </main>
+
+  <script>
+    const siteItems = document.querySelectorAll('.site-item');
+    siteItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        event.preventDefault();
+        const url = this.getAttribute('href');
+        window.location.href = url;
+      });
+    });
+  </script>
+</body>
+</html>

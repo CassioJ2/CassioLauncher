@@ -1,3 +1,4 @@
+module.exports = require('../lib/flash-loader');
 var app = require('electron').app;
 var BrowserWindow = require('electron').BrowserWindow;
 require('colors');
@@ -15,7 +16,7 @@ function criarJanela() {
       plugins: true                                       
     }
   });
-  janela.loadFile('../html/sites.html');
+  janela.loadFile('./html/sites.html');
 }
 
 

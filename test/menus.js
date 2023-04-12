@@ -20,7 +20,7 @@ function criarMenu() {
             });
 
             // Carrega um arquivo HTML que exibe as opções do site
-            siteWindow.loadFile('../html/sites.html');
+            siteWindow.loadFile('./html/sites.html');
           }
         }
       ]
